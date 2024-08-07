@@ -22,7 +22,15 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}
       >
         <Header />
-        {children}
+        <div
+          id="home"
+          className="
+            bg-gray-100
+            px-3 py-5 md:px-[10%] xl:px-[20%]
+            flex flex-col items-center"
+        >
+          {children}
+        </div>
       </body>
     </html>
   );
