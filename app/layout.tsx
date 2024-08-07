@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter as FontSans } from "next/font/google"
 
 import { cn } from "@/lib/utils";
+import { Header } from "@/components/common/Header";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <body
         className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}
       >
+        <Header />
         {children}
       </body>
     </html>
