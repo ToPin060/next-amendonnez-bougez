@@ -26,8 +26,8 @@ export const Header = () => {
           col-span-3
           flex flex-col items-center"
       >
-        <h1 className="font-bold text-xl md:text-4xl">AMENDONNEZ BOUGEZ</h1>
-        <h2 className="text-xs md:text-l">ASSOCIATION MULTISPORTS. Loi 1901</h2>
+        <h1 className="font-bold text-xl md:text-4xl lg:text-5xl 2xl:text-6xl">AMENDONNEZ BOUGEZ</h1>
+        <h2 className="text-xs md:text-lg 2xl:text-xl">ASSOCIATION MULTISPORTS. Loi 1901</h2>
       </div>
   </div>
   )
