@@ -12,9 +12,9 @@ export default function Home() {
       className="
         grid grid-cols-1 md:grid-cols-4 gap-5 justify-center items-center"
     >
-      <PicturesDisplay className="col-span-1 md:col-span-3" />
-      <HistoryDisplay className="col-span-1" />
-      <SchedulesDisplay className="col-span-2" />
+      <HistoryDisplay className="col-span-1 md:col-start-4" />
+      <PicturesDisplay className="col-span-1 md:col-span-3 md:row-start-1" />
+      <SchedulesDisplay className="col-span-1 md:col-span-2" />
     </div>
   );
 }
