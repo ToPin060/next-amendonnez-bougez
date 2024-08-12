@@ -32,11 +32,11 @@ export const SchedulesDisplay = ({className}: {className?: string}) => {
             {
                 schedules.map((schedule: Schedule, index: number) => (
                     <div key={"schedule" + index}>
-                        <p className="lg:text-xl 2xl:text-2xl"><strong>{schedule.title} : </strong> {schedule.day}</p>
+                        <p className="lg:text-xl"><strong>{schedule.title} : </strong> {schedule.day}</p>
                         <div className="flex flex-col px-5 py-2">
                         {
                             schedule.timeslots!.map((timeslot: TimeSlot, index: number) => (
-                                <p className="lg:text-xl 2xl:text-2xl" key={index}>{timeslot.toString()}</p>
+                                <p className="lg:text-xl" key={index}>{timeslot.toString()}</p>
                             ))
                         }
                         </div>

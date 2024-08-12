@@ -11,10 +11,10 @@ const MapDisplay = dynamic(() => import('../lib/MapDisplay'), {
 
 export const LocationDisplay = ({className}: {className?: string}) => {
   return (
-    <div className={`lg:text-xl 2xl:text-2xl ${className || ''}`}>
+    <div className={`lg:text-xl ${className || ''}`}>
+        <MapDisplay className="py-5"/>
         <p><strong>Lieux d'activités : </strong>{lieu}</p>
         <p><strong>Adresse : </strong>{address}</p>
-        <MapDisplay className="py-5"/>
     </div>
   )
 }
