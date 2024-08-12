@@ -18,6 +18,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
+      <head>
+        <script async
+          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.GMAP_TOKEN}&loading=async`}>
+        </script>
+      </head>
       <body
         className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}
       >
