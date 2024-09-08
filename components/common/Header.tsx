@@ -11,19 +11,19 @@ export const Header = () => {
         h-28 md:h-48
         p-3 md:py-5 md:px-[10%] xl:px-[20%]"
     >
-      <Image
+      {/* <Image
         className="
           col-span-1
           w-auto h-20 md:h-36"
         src="/logo.svg"
         alt="Logo Amendonnez Bougez"
         width={600} height={600} 
-      />
+      /> */}
       
       <div 
         id="titles"
         className="
-          col-span-3
+          col-span-4
           flex flex-col items-center"
       >
         <h1 className="font-bold text-xl md:text-4xl lg:text-5xl 2xl:text-6xl">AMENDONNEZ BOUGEZ</h1>
