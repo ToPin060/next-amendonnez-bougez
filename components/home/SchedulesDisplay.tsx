@@ -9,7 +9,7 @@ import React from 'react'
 const schedules: Schedule[] = [
     {
         title: "Créneaux enfants",
-        day: "Mercredi",
+        day: "Samedi",
         timeslots: [
             new TimeSlot(9., 10., "3 ans"),
             new TimeSlot(10., 11., "4 ans"),
@@ -43,6 +43,11 @@ export const SchedulesDisplay = ({className}: {className?: string}) => {
                     </div>
                 ))
             }
+        <div className="pt-5">
+            <p><strong>Jérôme VIOTTO</strong>, président d'Amendonnez Bougez</p>
+            <p><strong>Email :</strong> <a href="mailto:jeromeviotto@yahoo.fr">jeromeviotto@yahoo.fr</a></p>
+            <p><strong>Téléphone :</strong> <a href="tel:0613422072">06 13 42 20 72</a></p>
         </div>
+    </div>
   )
 }

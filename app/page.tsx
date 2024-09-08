@@ -6,6 +6,7 @@ import { SchedulesDisplay } from '@/components/home/SchedulesDisplay';
 import React from 'react'
 import { LocationDisplay } from '@/components/home/LocationDisplay';
 import { SportsDisplay } from '@/components/home/SportsDisplay';
+import { ContactDisplay } from '@/components/home/ContactDisplay';
 
 export default function Home() {
   return (

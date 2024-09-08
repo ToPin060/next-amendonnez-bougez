@@ -13,10 +13,11 @@ import {
 import * as React from "react"
 
 const pictureNames: string[] = [
-    "tennis",
-    "football",
-    "athletism",
-    "arc-bow"
+    "AB-repas",
+    "AB-escrime",
+    "AB-judo",
+    "AB-pelote-basque",
+    "AB-idk"
 ];
 
 // https://ui.shadcn.com/docs/components/carousel
@@ -47,14 +48,14 @@ export function PicturesDisplay({className}: {className?: string}) {
         <div className={`flex flex-col items-center ${className || ''}`}>
             <Carousel
                 setApi={setApi}
-                className="h-auto w-auto"
+                className="w-full max-w-sm md:max-w-md"
                 plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
                 <CarouselContent>
                     {pictureNames.map((name, index) => (
-                        <img key={index} src={"/sports/" + name + ".jpg"}/>
+                            <img className="object-cover px-20" key={index} src={"/sports/" + name + ".jpg"}/>
                     ))}
                 </CarouselContent>
                 <CarouselPrevious />
