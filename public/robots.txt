@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://amendonnezbougez.fr
+
+# Sitemaps
+Sitemap: https://amendonnezbougez.fr/sitemap.xml

@@ -19,9 +19,14 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="en">
       <head>
-        <script async
+        {/* <script async
           src={`https://maps.googleapis.com/maps/api/js?key=${process.env.GMAP_TOKEN}&loading=async`}>
-        </script>
+        </script> */}
+        <link rel="icon" href="/logo.svg" />
+        <title>Amendonnez Bougez</title>
+        <meta name="description" content="L’association 'Amendonnez Bougez' propose aux enfants de Blagnac une découverte ludique de multiples sports, en partenariat avec les clubs locaux. Une belle opportunité pour trouver l’activité idéale… et inciter petits et grands à bouger !" />
+        <meta name="robots" content="index, follow"/>
+
       </head>
       <body
         className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}

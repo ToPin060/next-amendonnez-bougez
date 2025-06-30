@@ -15,8 +15,14 @@ const center = {
 };
 
 const MapDisplay = ({ className }: { className?: string }) => {
-  if (typeof google === 'undefined') {
-    return <p>Impossible d'afficher la carte</p>;
+  if (typeof google === 'undefined' || true) {
+    return (
+  <div className="h-48 flex items-center justify-center bg-gray-100">
+    <p className="text-xs text-gray-500 text-center">
+      Impossible d'afficher la carte
+    </p>
+  </div>
+);
   }
 
   return (
